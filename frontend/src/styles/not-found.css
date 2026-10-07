@@ -1,0 +1,163 @@
+.not-found-page {
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+  color: #182b3b;
+}
+
+.not-found-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 80px;
+
+  align-items: center;
+}
+
+.not-found-code {
+  color: #087de0;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(110px, 15vw, 210px);
+  font-weight: 400;
+  line-height: 0.8;
+
+  letter-spacing: -0.05em;
+}
+
+.not-found-content {
+  max-width: 650px;
+
+  padding-left: 35px;
+
+  border-left: 1px solid #dce3e8;
+}
+
+.not-found-kicker {
+  margin: 0 0 15px;
+
+  color: #087de0;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+.not-found-content h1 {
+  margin: 0 0 18px;
+
+  color: #102536;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.not-found-content > p:not(.not-found-kicker) {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: #687580;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin-top: 32px;
+}
+
+.not-found-primary,
+.not-found-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 48px;
+
+  padding: 0 18px;
+
+  border-radius: 5px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.not-found-primary {
+  background: #087de0;
+  color: #ffffff;
+}
+
+.not-found-primary:hover {
+  background: #066fc7;
+}
+
+.not-found-secondary {
+  color: #182b3b;
+
+  border-bottom: 1px solid #182b3b;
+  border-radius: 0;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.not-found-secondary:hover {
+  color: #087de0;
+  border-color: #087de0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .not-found-page {
+    min-height: calc(100vh - 70px);
+  }
+
+  .not-found-container {
+    width: calc(100% - 30px);
+
+    grid-template-columns: 1fr;
+    gap: 45px;
+
+    padding: 80px 0;
+  }
+
+  .not-found-code {
+    font-size: 120px;
+  }
+
+  .not-found-content {
+    padding-left: 20px;
+  }
+
+  .not-found-content h1 {
+    font-size: 42px;
+  }
+
+  .not-found-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+}

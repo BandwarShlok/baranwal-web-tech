@@ -1,0 +1,178 @@
+.navbar {
+    width: 100%;
+    height: 76px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9ed;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    width: min(1200px, calc(100% - 48px));
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.brand picture {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 150px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* NAVIGATION */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    position: relative;
+
+    padding: 29px 0;
+
+    color: #182b3b;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #087de0;
+}
+
+
+/* ACTIVE PAGE */
+
+.nav-link.active {
+    color: #087de0;
+}
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 18px;
+
+    height: 2px;
+
+    background: #087de0;
+}
+
+
+/* LET'S TALK */
+
+.nav-talk {
+    min-width: 112px;
+    height: 46px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    background: #087de0;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.nav-talk:hover {
+    background: #066fc7;
+    transform: translateY(-1px);
+}
+
+
+/* MOBILE BUTTON */
+
+.mobile-menu-button {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    color: #182b3b;
+
+    border: 1px solid #dbe2e8;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/* TABLET / MOBILE */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar-container {
+        width: calc(100% - 30px);
+    }
+
+    .nav-menu,
+    .nav-talk {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+    }
+
+    .brand-logo {
+        width: 50px;
+        height: 50px;
+
+        object-fit: contain;
+    }
+}
