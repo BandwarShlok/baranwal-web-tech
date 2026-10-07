@@ -11,6 +11,7 @@ import Process from "./pages/Process";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/process" element={<Process />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

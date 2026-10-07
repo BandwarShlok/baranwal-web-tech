@@ -14,48 +14,30 @@ function NotFound() {
 
       <main className="not-found-page">
         <div className="not-found-container">
-
-          <div className="not-found-code">
-            404
-          </div>
+          <div className="not-found-code">404</div>
 
           <div className="not-found-content">
+            <p className="not-found-kicker">PAGE NOT FOUND</p>
 
-            <p className="not-found-kicker">
-              PAGE NOT FOUND
-            </p>
-
-            <h1>
-              This page doesn't exist.
-            </h1>
+            <h1>This page doesn't exist.</h1>
 
             <p>
-              The page may have moved, the link may be incorrect,
-              or the address you entered doesn't exist.
+              The page may have moved, the link may be incorrect, or the
+              address you entered doesn't exist.
             </p>
 
             <div className="not-found-actions">
-
-              <Link
-                to="/"
-                className="not-found-primary"
-              >
+              <Link to="/" className="not-found-primary">
                 <ArrowLeft size={17} />
                 Back to Home
               </Link>
 
-              <Link
-                to="/contact"
-                className="not-found-secondary"
-              >
+              <Link to="/contact" className="not-found-secondary">
                 Contact Us
                 <ArrowUpRight size={16} />
               </Link>
-
             </div>
-
           </div>
-
         </div>
       </main>
     </>

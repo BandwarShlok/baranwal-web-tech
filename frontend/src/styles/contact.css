@@ -344,6 +344,12 @@
     color: #8f2d24;
 }
 
+.form-message-info {
+    background: #f3f7fa;
+    border-color: #087de0;
+    color: #24516f;
+}
+
 .form-message-success {
     background: #f2f8f5;
     border-color: #2f7d58;

@@ -13,8 +13,6 @@ function Process() {
       />
 
       <div className="process-page">
-        {/* HERO */}
-
         <section className="process-hero">
           <div className="process-container">
             <div className="process-hero-number">03</div>
@@ -32,8 +30,6 @@ function Process() {
           </div>
         </section>
 
-        {/* PROCESS OVERVIEW */}
-
         <section className="process-overview">
           <div className="process-container">
             <div className="process-overview-heading">
@@ -43,8 +39,6 @@ function Process() {
             </div>
 
             <div className="process-timeline">
-              {/* STEP 01 */}
-
               <article className="process-item">
                 <div className="process-item-marker">
                   <span>01</span>
@@ -70,8 +64,6 @@ function Process() {
                   </div>
                 </div>
               </article>
-
-              {/* STEP 02 */}
 
               <article className="process-item">
                 <div className="process-item-marker">
@@ -99,8 +91,6 @@ function Process() {
                 </div>
               </article>
 
-              {/* STEP 03 */}
-
               <article className="process-item">
                 <div className="process-item-marker">
                   <span>03</span>
@@ -127,15 +117,13 @@ function Process() {
                 </div>
               </article>
 
-              {/* STEP 04 */}
-
               <article className="process-item">
                 <div className="process-item-marker">
                   <span>04</span>
                 </div>
 
                 <div className="process-item-content">
-                  <p className="process-item-label">LAUNCH</p>
+                  <p className="process-item-label">TEST & LAUNCH</p>
 
                   <h3>Test & Launch</h3>
 
@@ -157,8 +145,6 @@ function Process() {
             </div>
           </div>
         </section>
-
-        {/* CLIENT RESPONSIBILITIES */}
 
         <section className="process-client">
           <div className="process-container">
@@ -201,8 +187,6 @@ function Process() {
             </div>
           </div>
         </section>
-
-        {/* TIMELINE */}
 
         <section className="process-timeline-section">
           <div className="process-container">
@@ -247,8 +231,6 @@ function Process() {
             </div>
           </div>
         </section>
-
-        {/* CTA */}
 
         <section className="process-cta">
           <div className="process-container">

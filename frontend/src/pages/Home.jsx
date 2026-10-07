@@ -14,7 +14,6 @@ function Home() {
 
       <div className="home">
         {/* HERO */}
-
         <section className="hero">
           <div className="hero-container">
             <div className="hero-content">
@@ -45,25 +44,24 @@ function Home() {
             <div className="hero-project">
               <div className="project-label">
                 <span>01</span>
-                <span>Business Website</span>
+                <span>Selected Build</span>
               </div>
 
               <div className="project-image">
                 <div className="image-placeholder">
-                  <span>[ADD REAL PROJECT SCREENSHOT]</span>
+                  <span>Clinic Management System</span>
                 </div>
               </div>
 
               <div className="project-caption">
-                <strong>Fashion Store</strong>
-                <span>Business Website</span>
+                <strong>Clinic Management System</strong>
+                <span>Business System</span>
               </div>
             </div>
           </div>
         </section>
 
         {/* INDUSTRIES */}
-
         <section className="industry-strip">
           <div className="section-container">
             <span className="industry-label">WE WORK WITH</span>
@@ -79,7 +77,6 @@ function Home() {
         </section>
 
         {/* SERVICES */}
-
         <section className="services-section">
           <div className="section-container">
             <div className="section-intro">
@@ -167,14 +164,13 @@ function Home() {
         </section>
 
         {/* WORK */}
-
         <section className="work-section">
           <div className="section-container">
             <div className="work-heading">
               <div>
                 <p className="section-kicker">SELECTED WORK</p>
 
-                <h2>A few things we've built.</h2>
+                <h2>Projects we have worked on.</h2>
               </div>
 
               <Link to="/work" className="outline-link">
@@ -187,14 +183,14 @@ function Home() {
               <article className="work-item work-large">
                 <div className="work-image">
                   <div className="image-placeholder">
-                    <span>[ADD FASHION STORE SCREENSHOT]</span>
+                    <span>Clinic Management System</span>
                   </div>
                 </div>
 
                 <div className="work-info">
                   <div>
-                    <h3>Fashion Store</h3>
-                    <p>Business Website</p>
+                    <h3>Clinic Management System</h3>
+                    <p>Business System</p>
                   </div>
 
                   <span>01</span>
@@ -204,14 +200,14 @@ function Home() {
               <article className="work-item">
                 <div className="work-image">
                   <div className="image-placeholder">
-                    <span>[ADD SALON SCREENSHOT]</span>
+                    <span>Inventory Control System</span>
                   </div>
                 </div>
 
                 <div className="work-info">
                   <div>
-                    <h3>Salon</h3>
-                    <p>Website + Booking</p>
+                    <h3>Inventory Control System</h3>
+                    <p>Custom System</p>
                   </div>
 
                   <span>02</span>
@@ -221,14 +217,14 @@ function Home() {
               <article className="work-item work-offset">
                 <div className="work-image">
                   <div className="image-placeholder">
-                    <span>[ADD CLINIC SCREENSHOT]</span>
+                    <span>Student Result Management System</span>
                   </div>
                 </div>
 
                 <div className="work-info">
                   <div>
-                    <h3>Clinic</h3>
-                    <p>Website + Appointment</p>
+                    <h3>Student Result Management System</h3>
+                    <p>Management System</p>
                   </div>
 
                   <span>03</span>
@@ -239,7 +235,6 @@ function Home() {
         </section>
 
         {/* PROCESS */}
-
         <section className="process-section">
           <div className="section-container">
             <div className="process-layout">
@@ -262,6 +257,7 @@ function Home() {
               <div className="process-steps">
                 <div className="process-step">
                   <span>01</span>
+
                   <div>
                     <h3>Understand</h3>
                     <p>We learn about your business, customers and problem.</p>
@@ -270,6 +266,7 @@ function Home() {
 
                 <div className="process-step">
                   <span>02</span>
+
                   <div>
                     <h3>Plan</h3>
                     <p>We define the pages, features, technology and scope.</p>
@@ -278,6 +275,7 @@ function Home() {
 
                 <div className="process-step">
                   <span>03</span>
+
                   <div>
                     <h3>Build</h3>
                     <p>
@@ -288,6 +286,7 @@ function Home() {
 
                 <div className="process-step">
                   <span>04</span>
+
                   <div>
                     <h3>Launch</h3>
                     <p>We test, deploy and hand over the finished project.</p>
@@ -299,7 +298,6 @@ function Home() {
         </section>
 
         {/* PRICING */}
-
         <section className="pricing-section">
           <div className="section-container">
             <div className="pricing-layout">
@@ -347,7 +345,6 @@ function Home() {
         </section>
 
         {/* CTA */}
-
         <section className="final-cta">
           <div className="section-container">
             <div className="cta-content">

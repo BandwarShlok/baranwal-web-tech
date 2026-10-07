@@ -44,16 +44,16 @@ function Footer() {
         <div className="footer-column">
           <h3>Contact</h3>
 
-          <a href="mailto:[ADD EMAIL]">
-            [ADD EMAIL]
+          <a href="mailto:bandwarshlok@gmail.com">
+            bandwarshlok@gmail.com
           </a>
 
-          <a href="tel:[ADD PHONE]">
-            [ADD PHONE]
+          <a href="tel:9321324984">
+            +91 9321324984
           </a>
 
           <span>
-            [ADD BUSINESS ADDRESS]
+            Mumbai
           </span>
         </div>
 

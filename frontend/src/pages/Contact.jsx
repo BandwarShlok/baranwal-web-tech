@@ -55,19 +55,9 @@ function Contact() {
     }
 
     setFormStatus({
-      type: "success",
+      type: "info",
       message:
-        "Thanks. Your project enquiry has been received. We'll get back to you soon.",
-    });
-
-    setFormData({
-      name: "",
-      business: "",
-      email: "",
-      phone: "",
-      projectType: "",
-      budget: "",
-      message: "",
+        "The enquiry form is being connected to our project system. For now, please contact us directly by email or phone.",
     });
   };
 
@@ -79,7 +69,6 @@ function Contact() {
       />
 
       <main className="contact-page">
-        {/* HERO */}
         <section className="contact-hero">
           <div className="contact-container">
             <div className="contact-hero-content">
@@ -92,17 +81,15 @@ function Contact() {
               </h1>
 
               <p className="contact-hero-text">
-                Tell us what you're trying to improve. We'll help you figure out
-                the right digital solution for your business.
+                Tell us what you're trying to improve. We'll help you figure
+                out the right digital solution for your business.
               </p>
             </div>
           </div>
         </section>
 
-        {/* CONTACT AREA */}
         <section className="contact-section">
           <div className="contact-container contact-grid">
-            {/* LEFT SIDE */}
             <div className="contact-details">
               <div className="contact-intro">
                 <p className="section-label">LET'S TALK</p>
@@ -128,7 +115,9 @@ function Contact() {
 
                   <div>
                     <span>Email</span>
-                    <a href="mailto:bandwarshlok@gmail.com">bandwarshlok@gmail.com</a>
+                    <a href="mailto:bandwarshlok@gmail.com">
+                      bandwarshlok@gmail.com
+                    </a>
                   </div>
                 </div>
 
@@ -176,7 +165,6 @@ function Contact() {
               </div>
             </div>
 
-            {/* RIGHT SIDE FORM */}
             <div className="contact-form-wrapper">
               <div className="contact-form-heading">
                 <p className="section-label">PROJECT ENQUIRY</p>
@@ -189,7 +177,6 @@ function Contact() {
               </div>
 
               <form className="contact-form" onSubmit={handleSubmit} noValidate>
-                {/* NAME + BUSINESS */}
                 <div className="form-row">
                   <div className="form-field">
                     <label htmlFor="name">
@@ -222,7 +209,6 @@ function Contact() {
                   </div>
                 </div>
 
-                {/* EMAIL + PHONE */}
                 <div className="form-row">
                   <div className="form-field">
                     <label htmlFor="email">
@@ -255,7 +241,6 @@ function Contact() {
                   </div>
                 </div>
 
-                {/* PROJECT TYPE + BUDGET */}
                 <div className="form-row">
                   <div className="form-field">
                     <label htmlFor="projectType">
@@ -269,19 +254,15 @@ function Contact() {
                       onChange={handleChange}
                     >
                       <option value="">Select project type</option>
-
-                      <option value="Business Website">Business Website</option>
-
+                      <option value="Business Website">
+                        Business Website
+                      </option>
                       <option value="E-Commerce">E-Commerce</option>
-
                       <option value="Custom Business System">
                         Custom Business System
                       </option>
-
                       <option value="Automation">Automation</option>
-
                       <option value="AI Solution">AI Solution</option>
-
                       <option value="Other">Other</option>
                     </select>
                   </div>
@@ -296,25 +277,21 @@ function Contact() {
                       onChange={handleChange}
                     >
                       <option value="">Select budget</option>
-
-                      <option value="₹5,000 – ₹10,000">₹5,000 – ₹10,000</option>
-
+                      <option value="₹5,000 – ₹10,000">
+                        ₹5,000 – ₹10,000
+                      </option>
                       <option value="₹10,000 – ₹20,000">
                         ₹10,000 – ₹20,000
                       </option>
-
                       <option value="₹20,000 – ₹50,000">
                         ₹20,000 – ₹50,000
                       </option>
-
                       <option value="₹50,000+">₹50,000+</option>
-
                       <option value="Not sure">Not sure yet</option>
                     </select>
                   </div>
                 </div>
 
-                {/* MESSAGE */}
                 <div className="form-field form-field-full">
                   <label htmlFor="message">
                     Project Details <span>*</span>
@@ -330,13 +307,12 @@ function Contact() {
                   />
                 </div>
 
-                {/* STATUS MESSAGE */}
                 {formStatus.message && (
                   <div
                     className={`form-message ${
                       formStatus.type === "error"
                         ? "form-message-error"
-                        : "form-message-success"
+                        : "form-message-info"
                     }`}
                     role="status"
                   >
@@ -344,21 +320,21 @@ function Contact() {
                   </div>
                 )}
 
-                {/* SUBMIT */}
                 <div className="form-submit">
                   <button type="submit" className="contact-submit">
                     Send Project Enquiry
                     <ArrowUpRight size={17} />
                   </button>
 
-                  <p>We'll review your enquiry and get back to you.</p>
+                  <p>
+                    You can also contact us directly by email or phone.
+                  </p>
                 </div>
               </form>
             </div>
           </div>
         </section>
 
-        {/* BOTTOM CTA */}
         <section className="contact-bottom">
           <div className="contact-container">
             <div className="contact-bottom-inner">
@@ -379,7 +355,10 @@ function Contact() {
                   system, automation or another solution makes sense.
                 </p>
 
-                <a href="mailto:bandwarshlok@gmail.com" className="contact-email-link">
+                <a
+                  href="mailto:bandwarshlok@gmail.com"
+                  className="contact-email-link"
+                >
                   Email us
                   <ArrowUpRight size={17} />
                 </a>

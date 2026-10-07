@@ -8,13 +8,11 @@ function About() {
   return (
     <>
       <SEO
-        title="About Us | Baranwal Web & Tech"
+        title="About | Baranwal Web & Tech"
         description="Learn about Baranwal Web & Tech and our approach to building professional websites, business systems and practical digital solutions."
       />
 
       <div className="about-page">
-        {/* HERO */}
-
         <section className="about-hero">
           <div className="about-container">
             <div className="about-hero-number">04</div>
@@ -31,8 +29,6 @@ function About() {
             </div>
           </div>
         </section>
-
-        {/* INTRODUCTION */}
 
         <section className="about-intro">
           <div className="about-container">
@@ -62,8 +58,6 @@ function About() {
             </div>
           </div>
         </section>
-
-        {/* APPROACH */}
 
         <section className="about-approach">
           <div className="about-container">
@@ -129,8 +123,6 @@ function About() {
           </div>
         </section>
 
-        {/* WHAT WE WORK ON */}
-
         <section className="about-capabilities">
           <div className="about-container">
             <div className="about-capabilities-grid">
@@ -170,31 +162,36 @@ function About() {
           </div>
         </section>
 
-        {/* FOUNDER / TEAM */}
-
         <section className="about-team">
           <div className="about-container">
             <div className="about-team-grid">
               <div className="about-team-image">
-                <div>[ADD REAL FOUNDER / TEAM PHOTO]</div>
+                <div>
+                  Independent digital agency focused on practical business
+                  solutions.
+                </div>
               </div>
 
               <div className="about-team-content">
                 <p className="about-kicker">THE PEOPLE BEHIND THE WORK</p>
 
-                <h2>Built by people who care about the details.</h2>
-
-                <p>[ADD REAL FOUNDER / TEAM INTRODUCTION HERE]</p>
+                <h2>A focused approach to every project.</h2>
 
                 <p>
-                  Add your real background, experience, education, skills or the
-                  reason you started Baranwal Web & Tech here.
+                  Baranwal Web & Tech is built around a simple idea: understand
+                  the business first, then build the technology that actually
+                  helps.
+                </p>
+
+                <p>
+                  Each project is approached with attention to its requirements,
+                  users, functionality and long-term usefulness.
                 </p>
 
                 <div className="about-team-facts">
                   <div>
-                    <span>Founder</span>
-                    <strong>Shlok Naresh Baranwal</strong>
+                    <span>Agency</span>
+                    <strong>Baranwal Web & Tech</strong>
                   </div>
 
                   <div>
@@ -206,8 +203,6 @@ function About() {
             </div>
           </div>
         </section>
-
-        {/* CTA */}
 
         <section className="about-cta">
           <div className="about-container">

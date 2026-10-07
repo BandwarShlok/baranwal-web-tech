@@ -9,12 +9,11 @@ function Work() {
     <>
       <SEO
         title="Our Work | Baranwal Web & Tech"
-        description="Explore websites, e-commerce projects and custom digital solutions designed and developed by Baranwal Web & Tech."
+        description="Explore websites, business systems and digital products designed and developed by Baranwal Web & Tech."
       />
 
       <div className="work-page">
         {/* HERO */}
-
         <section className="work-hero">
           <div className="work-container">
             <div className="work-hero-number">02</div>
@@ -33,7 +32,6 @@ function Work() {
         </section>
 
         {/* PROJECTS */}
-
         <section className="work-projects">
           <div className="work-container">
             <div className="work-projects-intro">
@@ -51,152 +49,145 @@ function Work() {
             </div>
 
             {/* PROJECT 01 */}
-
             <article className="work-project work-project-featured">
               <div className="work-project-image">
                 <div className="work-image-placeholder">
-                  <span>[ADD FASHION STORE SCREENSHOT]</span>
+                  <span>Clinic Management System</span>
                 </div>
               </div>
 
               <div className="work-project-info">
                 <div className="work-project-meta">
                   <span>01</span>
-                  <span>Business Website</span>
+                  <span>Business System</span>
                 </div>
 
-                <h3>Fashion Store</h3>
+                <h3>Clinic Management System</h3>
 
                 <p>
-                  A product-focused website for a clothing business, designed to
-                  present collections, products and customer enquiry options
-                  clearly.
+                  A business management system designed to organize clinic
+                  operations, appointments and day-to-day information.
                 </p>
 
                 <div className="work-project-tags">
-                  <span>Website</span>
+                  <span>Web Application</span>
+                  <span>Management</span>
                   <span>Responsive</span>
-                  <span>WhatsApp</span>
                 </div>
               </div>
             </article>
 
             {/* PROJECT 02 */}
-
             <article className="work-project work-project-reverse">
               <div className="work-project-info">
                 <div className="work-project-meta">
                   <span>02</span>
-                  <span>Booking Website</span>
+                  <span>Custom System</span>
                 </div>
 
-                <h3>Salon</h3>
+                <h3>Inventory Control System</h3>
 
                 <p>
-                  A service-based website designed to help customers understand
-                  available services and make appointment enquiries.
+                  A system for managing products, stock information and
+                  inventory-related operations in one place.
                 </p>
 
                 <div className="work-project-tags">
-                  <span>Website</span>
-                  <span>Booking</span>
-                  <span>Contact</span>
+                  <span>Web Application</span>
+                  <span>Inventory</span>
+                  <span>Database</span>
                 </div>
               </div>
 
               <div className="work-project-image">
                 <div className="work-image-placeholder">
-                  <span>[ADD SALON SCREENSHOT]</span>
+                  <span>Inventory Control System</span>
                 </div>
               </div>
             </article>
 
             {/* PROJECT 03 */}
-
             <article className="work-project">
               <div className="work-project-image">
                 <div className="work-image-placeholder">
-                  <span>[ADD CLINIC SCREENSHOT]</span>
+                  <span>Student Result Management System</span>
                 </div>
               </div>
 
               <div className="work-project-info">
                 <div className="work-project-meta">
                   <span>03</span>
-                  <span>Business System</span>
+                  <span>Management System</span>
                 </div>
 
-                <h3>Clinic</h3>
+                <h3>Student Result Management System</h3>
 
                 <p>
-                  A clinic website and appointment workflow designed to make it
-                  easier for patients to find information and request
-                  appointments.
+                  A web-based system for managing student information, results
+                  and academic records through structured workflows.
                 </p>
 
                 <div className="work-project-tags">
-                  <span>Website</span>
-                  <span>Appointments</span>
-                  <span>Admin</span>
+                  <span>Web Application</span>
+                  <span>Student Management</span>
+                  <span>Database</span>
                 </div>
               </div>
             </article>
 
             {/* PROJECT 04 */}
-
             <article className="work-project work-project-reverse">
               <div className="work-project-info">
                 <div className="work-project-meta">
                   <span>04</span>
-                  <span>Custom System</span>
+                  <span>Web Application</span>
                 </div>
 
-                <h3>Inventory Control</h3>
+                <h3>GymFlow</h3>
 
                 <p>
-                  A business management system focused on tracking products,
-                  stock information and day-to-day inventory operations.
+                  A fitness-focused web application for workout planning,
+                  nutrition tracking and progress management.
                 </p>
 
                 <div className="work-project-tags">
-                  <span>Dashboard</span>
-                  <span>Database</span>
-                  <span>Management</span>
+                  <span>Web Application</span>
+                  <span>Workout</span>
+                  <span>Diet</span>
                 </div>
               </div>
 
               <div className="work-project-image">
                 <div className="work-image-placeholder">
-                  <span>[ADD INVENTORY SCREENSHOT]</span>
+                  <span>GymFlow</span>
                 </div>
               </div>
             </article>
 
             {/* PROJECT 05 */}
-
             <article className="work-project">
               <div className="work-project-image">
                 <div className="work-image-placeholder">
-                  <span>[ADD STUDENT SYSTEM SCREENSHOT]</span>
+                  <span>TradeX</span>
                 </div>
               </div>
 
               <div className="work-project-info">
                 <div className="work-project-meta">
                   <span>05</span>
-                  <span>Management System</span>
+                  <span>Web Application</span>
                 </div>
 
-                <h3>Student Result Management</h3>
+                <h3>TradeX</h3>
 
                 <p>
-                  A digital system for managing student records, results and
-                  administrative operations in one place.
+                  A simulated online trading application with portfolio,
+                  transaction and buy-and-sell workflows.
                 </p>
 
                 <div className="work-project-tags">
-                  <span>Management</span>
-                  <span>Database</span>
+                  <span>Web Application</span>
+                  <span>Trading Simulation</span>
                   <span>Dashboard</span>
                 </div>
               </div>
@@ -204,28 +195,23 @@ function Work() {
           </div>
         </section>
 
-        {/* APPROACH */}
-
-        <section className="work-approach">
+        {/* CTA */}
+        <section className="work-cta">
           <div className="work-container">
-            <div className="work-approach-grid">
-              <div>
-                <p className="work-kicker">HAVE AN IDEA?</p>
+            <div className="work-cta-content">
+              <p className="work-kicker">HAVE A PROJECT?</p>
 
-                <h2>Your project could be next.</h2>
-              </div>
+              <h2>Have something you want to build?</h2>
 
-              <div>
-                <p>
-                  Tell us what you're building, what isn't working, or what you
-                  want to improve. We'll help you decide what should be built.
-                </p>
+              <p>
+                Tell us about your business, project or workflow and we'll
+                discuss the right solution.
+              </p>
 
-                <Link to="/contact" className="work-button">
-                  Start a Project
-                  <ArrowUpRight size={17} />
-                </Link>
-              </div>
+              <Link to="/contact" className="work-button">
+                Start a Conversation
+                <ArrowUpRight size={17} />
+              </Link>
             </div>
           </div>
         </section>
