@@ -6,7 +6,7 @@ function Privacy() {
     <>
       <SEO
         title="Privacy Policy | Baranwal Web & Tech"
-        description="Privacy Policy for Baranwal Web & Tech explaining how information shared with us is handled."
+        description="Privacy Policy for Baranwal Web & Tech explaining how information shared with us is collected, used and stored."
       />
 
       <main className="privacy-page">
@@ -38,10 +38,11 @@ function Privacy() {
               </p>
 
               <p>
-                The project enquiry form on this website is currently a frontend
-                interface and is not connected to a data-processing backend.
-                Information entered into the form is not currently transmitted
-                to or stored by our website.
+                When you submit an enquiry through the website, the information
+                you provide through the enquiry form is transmitted to our
+                backend server and stored in our database. This may include your
+                name, business name, email address, phone number, project type,
+                budget and project message.
               </p>
             </article>
 
@@ -56,6 +57,12 @@ function Privacy() {
               </p>
 
               <p>
+                Information submitted through the website may also be used to
+                manage and track project enquiries within our internal
+                administration system.
+              </p>
+
+              <p>
                 We aim to collect and use information only for purposes relevant
                 to the interaction or service being provided.
               </p>
@@ -65,14 +72,14 @@ function Privacy() {
               <h2>3. Contact and Project Enquiries</h2>
 
               <p>
-                You can contact Baranwal Web & Tech using the email address or
-                phone number provided on the website.
+                You can contact Baranwal Web & Tech using the email address,
+                phone number or enquiry form provided on the website.
               </p>
 
               <p>
-                When you voluntarily contact us, the information you provide may
-                be used to respond to your request and discuss the services you
-                are interested in.
+                When you voluntarily submit an enquiry, the information you
+                provide is transmitted to our backend and stored in our database
+                so that we can review, respond to and manage your enquiry.
               </p>
 
               <p>We do not sell your personal information to third parties.</p>
@@ -104,9 +111,10 @@ function Privacy() {
               </p>
 
               <p>
-                If third-party services are introduced for forms, payments,
-                hosting, analytics, communication or other business functions,
-                their respective privacy policies may also apply.
+                Our website infrastructure may use third-party services for
+                hosting, database management, deployment, communication or other
+                business functions. Their respective privacy policies may also
+                apply where relevant.
               </p>
             </article>
 
@@ -114,8 +122,9 @@ function Privacy() {
               <h2>6. Data Security</h2>
 
               <p>
-                We take reasonable measures to protect information voluntarily
-                shared with us. However, no method of internet transmission or
+                We take reasonable technical and organizational measures to
+                protect information voluntarily shared with us and stored in our
+                systems. However, no method of internet transmission or
                 electronic storage can be guaranteed to be completely secure.
               </p>
             </article>
@@ -124,10 +133,10 @@ function Privacy() {
               <h2>7. Data Retention</h2>
 
               <p>
-                Information received through direct communication may be
-                retained only for as long as reasonably necessary to respond to
-                the enquiry, provide services, maintain appropriate business
-                records or meet applicable legal requirements.
+                Enquiry information may be retained for as long as reasonably
+                necessary to respond to the enquiry, discuss or provide
+                services, maintain appropriate business records or meet
+                applicable legal requirements.
               </p>
             </article>
 

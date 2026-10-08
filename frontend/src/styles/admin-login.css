@@ -1,0 +1,138 @@
+.admin-login-page {
+  min-height: calc(100vh - 80px);
+  background: #f7f8fa;
+  display: flex;
+  align-items: center;
+  padding: 80px 24px;
+}
+
+.admin-login-section {
+  width: 100%;
+}
+
+.admin-login-container {
+  width: min(100%, 480px);
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  padding: 48px;
+}
+
+.admin-login-header {
+  margin-bottom: 36px;
+}
+
+.admin-login-eyebrow {
+  margin: 0 0 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #1d63d6;
+}
+
+.admin-login-header h1 {
+  margin: 0;
+  color: #101828;
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.admin-login-header p {
+  margin: 18px 0 0;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.admin-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-form-field label {
+  color: #101828;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-form-field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #101828;
+  font: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.admin-form-field input:focus {
+  border-color: #1d63d6;
+  box-shadow: 0 0 0 2px rgba(29, 99, 214, 0.08);
+}
+
+.admin-form-field input::placeholder {
+  color: #98a2b3;
+}
+
+.admin-login-error {
+  padding: 12px 14px;
+  border: 1px solid #f0b4b4;
+  background: #fff5f5;
+  color: #b42318;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.admin-login-button {
+  min-height: 50px;
+  margin-top: 4px;
+  padding: 0 20px;
+  border: 1px solid #1d63d6;
+  border-radius: 4px;
+  background: #1d63d6;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.admin-login-button:hover:not(:disabled) {
+  background: #174fae;
+  border-color: #174fae;
+}
+
+.admin-login-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .admin-login-page {
+    min-height: calc(100vh - 64px);
+    padding: 40px 16px;
+  }
+
+  .admin-login-container {
+    padding: 30px 22px;
+  }
+
+  .admin-login-header h1 {
+    font-size: 36px;
+  }
+}

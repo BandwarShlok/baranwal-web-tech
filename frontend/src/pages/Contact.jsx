@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { ArrowUpRight, Mail, Phone, MapPin, Clock3 } from "lucide-react";
 
 import SEO from "../components/SEO";
@@ -20,6 +21,8 @@ function Contact() {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
 
@@ -36,15 +39,18 @@ function Contact() {
     }
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (
-      !formData.name.trim() ||
-      !formData.email.trim() ||
-      !formData.projectType ||
-      !formData.message.trim()
-    ) {
+    const name = formData.name.trim();
+    const business = formData.business.trim();
+    const email = formData.email.trim();
+    const phone = formData.phone.trim();
+    const projectType = formData.projectType;
+    const budget = formData.budget;
+    const message = formData.message.trim();
+
+    if (!name || !email || !projectType || !message) {
       setFormStatus({
         type: "error",
         message:
@@ -54,11 +60,79 @@ function Contact() {
       return;
     }
 
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      setFormStatus({
+        type: "error",
+        message: "Please enter a valid email address.",
+      });
+
+      return;
+    }
+
+    setIsSubmitting(true);
+
     setFormStatus({
       type: "info",
-      message:
-        "The enquiry form is being connected to our project system. For now, please contact us directly by email or phone.",
+      message: "Sending your enquiry...",
     });
+
+    try {
+      const apiUrl = import.meta.env.VITE_API_URL;
+
+      if (!apiUrl) {
+        throw new Error("Backend API URL is not configured.");
+      }
+
+      const response = await fetch(`${apiUrl}/api/enquiries`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          business,
+          email,
+          phone,
+          projectType,
+          budget,
+          message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Unable to submit enquiry.");
+      }
+
+      setFormStatus({
+        type: "success",
+        message:
+          "Your project enquiry has been submitted successfully. We'll get back to you soon.",
+      });
+
+      setFormData({
+        name: "",
+        business: "",
+        email: "",
+        phone: "",
+        projectType: "",
+        budget: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Enquiry submission error:", error);
+
+      setFormStatus({
+        type: "error",
+        message:
+          "We couldn't submit your enquiry. Please try again or contact us directly by email or phone.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -81,8 +155,8 @@ function Contact() {
               </h1>
 
               <p className="contact-hero-text">
-                Tell us what you're trying to improve. We'll help you figure
-                out the right digital solution for your business.
+                Tell us what you're trying to improve. We'll help you figure out
+                the right digital solution for your business.
               </p>
             </div>
           </div>
@@ -115,6 +189,7 @@ function Contact() {
 
                   <div>
                     <span>Email</span>
+
                     <a href="mailto:bandwarshlok@gmail.com">
                       bandwarshlok@gmail.com
                     </a>
@@ -128,7 +203,8 @@ function Contact() {
 
                   <div>
                     <span>Phone</span>
-                    <a href="tel:9321324984">+91 9321324984</a>
+
+                    <a href="tel:+919321324984">+91 9321324984</a>
                   </div>
                 </div>
 
@@ -139,6 +215,7 @@ function Contact() {
 
                   <div>
                     <span>Location</span>
+
                     <p>Mumbai</p>
                   </div>
                 </div>
@@ -150,7 +227,8 @@ function Contact() {
 
                   <div>
                     <span>Working Hours</span>
-                    <p>Monday – Saturday, 10 AM – 7 PM</p>
+
+                    <p>Monday - Saturday, 10 AM - 7 PM</p>
                   </div>
                 </div>
               </div>
@@ -158,7 +236,7 @@ function Contact() {
               <div className="contact-direct">
                 <p>Prefer a quick conversation?</p>
 
-                <a href="tel:9321324984" className="contact-direct-link">
+                <a href="tel:+919321324984" className="contact-direct-link">
                   Call us directly
                   <ArrowUpRight size={17} />
                 </a>
@@ -254,9 +332,7 @@ function Contact() {
                       onChange={handleChange}
                     >
                       <option value="">Select project type</option>
-                      <option value="Business Website">
-                        Business Website
-                      </option>
+                      <option value="Business Website">Business Website</option>
                       <option value="E-Commerce">E-Commerce</option>
                       <option value="Custom Business System">
                         Custom Business System
@@ -277,14 +353,12 @@ function Contact() {
                       onChange={handleChange}
                     >
                       <option value="">Select budget</option>
-                      <option value="₹5,000 – ₹10,000">
-                        ₹5,000 – ₹10,000
+                      <option value="₹5,000 - ₹10,000">₹5,000 - ₹10,000</option>
+                      <option value="₹10,000 - ₹20,000">
+                        ₹10,000 - ₹20,000
                       </option>
-                      <option value="₹10,000 – ₹20,000">
-                        ₹10,000 – ₹20,000
-                      </option>
-                      <option value="₹20,000 – ₹50,000">
-                        ₹20,000 – ₹50,000
+                      <option value="₹20,000 - ₹50,000">
+                        ₹20,000 - ₹50,000
                       </option>
                       <option value="₹50,000+">₹50,000+</option>
                       <option value="Not sure">Not sure yet</option>
@@ -312,23 +386,29 @@ function Contact() {
                     className={`form-message ${
                       formStatus.type === "error"
                         ? "form-message-error"
-                        : "form-message-info"
+                        : formStatus.type === "success"
+                          ? "form-message-success"
+                          : "form-message-info"
                     }`}
                     role="status"
+                    aria-live="polite"
                   >
                     {formStatus.message}
                   </div>
                 )}
 
                 <div className="form-submit">
-                  <button type="submit" className="contact-submit">
-                    Send Project Enquiry
-                    <ArrowUpRight size={17} />
+                  <button
+                    type="submit"
+                    className="contact-submit"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Send Project Enquiry"}
+
+                    {!isSubmitting && <ArrowUpRight size={17} />}
                   </button>
 
-                  <p>
-                    You can also contact us directly by email or phone.
-                  </p>
+                  <p>You can also contact us directly by email or phone.</p>
                 </div>
               </form>
             </div>

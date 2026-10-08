@@ -1,11 +1,18 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
 import "../styles/navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isAdminPage = location.pathname.startsWith("/admin");
+
+  if (isAdminPage) {
+    return null;
+  }
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -79,6 +86,7 @@ function Navbar() {
             menuOpen ? "Close navigation menu" : "Open navigation menu"
           }
           aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
         >
           {menuOpen ? (
             <X size={23} strokeWidth={2} />
@@ -90,7 +98,11 @@ function Navbar() {
 
       {/* MOBILE NAVIGATION */}
       {menuOpen && (
-        <nav className="mobile-nav">
+        <nav
+          id="mobile-navigation"
+          className="mobile-nav"
+          aria-label="Mobile navigation"
+        >
           <NavLink to="/" end className={mobileNavClass} onClick={closeMenu}>
             Home
           </NavLink>
