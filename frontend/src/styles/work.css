@@ -1,397 +1,536 @@
+/* =========================================================
+   BARANWAL WEB & TECH
+   WORK PAGE
+   ========================================================= */
+
 .work-page {
+  width: 100%;
+  overflow: hidden;
   background: #ffffff;
-  color: #182b3b;
+  color: #101828;
 }
 
-.work-container {
-  width: min(1200px, calc(100% - 48px));
-  margin: 0 auto;
-}
 
-.work-kicker {
+/* =========================================================
+   COMMON
+   ========================================================= */
+
+.section-label {
   margin: 0;
-
-  color: #087de0;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 12px;
+  font-size: 0.72rem;
   font-weight: 700;
-
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #155eef;
 }
 
 
-/* HERO */
+/* =========================================================
+   PAGE HERO
+   ========================================================= */
 
 .work-hero {
-  padding: 105px 0 110px;
-
-  border-bottom: 1px solid #dce3e8;
-}
-
-.work-hero .work-container {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 20px;
-}
-
-.work-hero-number {
-  color: #087de0;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 120px 0 110px;
+  border-bottom: 1px solid #eaecf0;
 }
 
 .work-hero-content {
-  max-width: 850px;
+  max-width: 900px;
 }
 
 .work-hero-content h1 {
-  margin: 18px 0 25px;
+  max-width: 850px;
+  margin: 18px 0 28px;
 
-  color: #102536;
-
-  font-family: "DM Serif Display", serif;
-  font-size: clamp(50px, 6vw, 76px);
-  font-weight: 400;
-  line-height: 1.02;
-
-  letter-spacing: -0.025em;
+  font-size: clamp(3rem, 6vw, 5.7rem);
+  line-height: 0.98;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  color: #101828;
 }
 
-.work-hero-content > p:last-child {
-  max-width: 610px;
+.work-hero-content h1 span {
+  color: #475467;
+}
 
+.work-hero-content>p:last-child {
+  max-width: 650px;
   margin: 0;
 
-  color: #687580;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #667085;
 }
 
 
-/* PROJECT SECTION */
+/* =========================================================
+   PROJECTS SECTION
+   ========================================================= */
 
 .work-projects {
-  padding: 110px 0 130px;
-}
-
-.work-projects-intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-
-  margin-bottom: 75px;
-}
-
-.work-projects-intro h2 {
-  max-width: 550px;
-
-  margin: 18px 0 0;
-
-  color: #102536;
-
-  font-family: "DM Serif Display", serif;
-  font-size: clamp(38px, 4vw, 55px);
-  font-weight: 400;
-  line-height: 1.08;
-}
-
-.work-projects-intro > p {
-  max-width: 500px;
-
-  margin: 0;
-
-  align-self: end;
-
-  color: #687580;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
 }
 
 
-/* PROJECT */
+/* =========================================================
+   PROJECT
+   ========================================================= */
 
 .work-project {
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  gap: 65px;
-
-  align-items: center;
-
-  padding: 70px 0;
-
-  border-top: 1px solid #dce3e8;
+  padding: 90px 0;
+  border-bottom: 1px solid #eaecf0;
 }
 
-.work-project-reverse {
-  grid-template-columns: 0.75fr 1.25fr;
-}
+.project-number {
+  margin-bottom: 40px;
 
-.work-project-image {
-  min-width: 0;
-
-  aspect-ratio: 4 / 3;
-
-  background: #f1f4f6;
-
-  border: 1px solid #dce3e8;
-}
-
-.work-image-placeholder {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 25px;
-
-  color: #7b8790;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-
-.work-project-info {
-  max-width: 440px;
-}
-
-.work-project-meta {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-
-  margin-bottom: 18px;
-
-  color: #7e8a94;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
   letter-spacing: 0.08em;
+  color: #98a2b3;
 }
 
-.work-project-meta span:first-child {
-  color: #087de0;
+.project-content {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  gap: 90px;
+  align-items: center;
 }
 
-.work-project-info h3 {
-  margin: 0 0 17px;
 
-  color: #182b3b;
+/* =========================================================
+   PROJECT INFORMATION
+   ========================================================= */
 
-  font-family: "DM Serif Display", serif;
-  font-size: 38px;
-  font-weight: 400;
-  line-height: 1.08;
+.project-info {
+  max-width: 570px;
 }
 
-.work-project-info > p {
+.project-category {
+  margin: 0 0 14px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #155eef;
+}
+
+.project-info h2 {
   margin: 0;
 
-  color: #687580;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: clamp(2.3rem, 4vw, 4.1rem);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  color: #101828;
 }
 
-.work-project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
+.project-description {
+  max-width: 540px;
+  margin: 25px 0 32px;
 
-  margin-top: 25px;
-}
-
-.work-project-tags span {
-  color: #596874;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 11px;
-
-  padding-bottom: 4px;
-
-  border-bottom: 1px solid #cfd8de;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #667085;
 }
 
 
-/* APPROACH */
+/* =========================================================
+   PROJECT DETAILS
+   ========================================================= */
 
-.work-approach {
-  padding: 105px 0;
-
-  background: #102536;
-}
-
-.work-approach-grid {
+.project-details {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 110px;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 30px;
+
+  margin-bottom: 34px;
+  padding-top: 25px;
+  border-top: 1px solid #eaecf0;
 }
 
-.work-approach-grid h2 {
-  max-width: 570px;
-
-  margin: 18px 0 0;
-
-  color: #ffffff;
-
-  font-family: "DM Serif Display", serif;
-  font-size: clamp(38px, 4vw, 55px);
-  font-weight: 400;
-  line-height: 1.08;
+.project-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
-.work-approach-grid > div:last-child {
-  max-width: 500px;
+.project-details span {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #98a2b3;
 }
 
-.work-approach-grid > div:last-child p {
-  margin: 0 0 25px;
-
-  color: #bdc8cf;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
+.project-details strong {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #344054;
 }
 
-.work-button {
-  min-height: 48px;
 
-  padding: 0 18px;
+/* =========================================================
+   PROJECT LINK
+   ========================================================= */
 
+.project-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 
-  background: #087de0;
-  color: #ffffff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #155eef;
 
-  border-radius: 5px;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #155eef;
   text-decoration: none;
 
-  transition: background 0.2s ease;
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.work-button:hover {
-  background: #066fc7;
+.project-link:hover {
+  gap: 15px;
+  color: #0f4fd6;
+  border-color: #0f4fd6;
 }
 
-
-/* TABLET */
-
-@media (max-width: 900px) {
-
-  .work-project,
-  .work-project-reverse {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .work-project-reverse .work-project-info {
-    order: 2;
-  }
-
-  .work-project-reverse .work-project-image {
-    order: 1;
-  }
-
-  .work-project-info {
-    max-width: 650px;
-  }
-
-  .work-approach-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
+.project-link span {
+  font-size: 1rem;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   PROJECT PREVIEW
+   ========================================================= */
 
-@media (max-width: 700px) {
+.project-preview {
+  position: relative;
 
-  .work-container {
-    width: calc(100% - 30px);
-  }
+  min-height: 430px;
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #f4f6f8;
+  border: 1px solid #dfe3e8;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.work-project:hover .project-preview {
+  transform: translateY(-4px);
+  border-color: #c4cad2;
+}
+
+.project-preview::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 6px;
+  height: 100%;
+
+  background: #155eef;
+}
+
+
+/* =========================================================
+   PREVIEW HEADER
+   ========================================================= */
+
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #667085;
+}
+
+
+/* =========================================================
+   PREVIEW BODY
+   ========================================================= */
+
+.preview-body {
+  padding-left: 10px;
+}
+
+.preview-body p {
+  margin: 0 0 14px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #155eef;
+}
+
+.preview-body h3 {
+  max-width: 500px;
+  margin: 0 0 28px;
+
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  color: #101828;
+}
+
+
+/* =========================================================
+   PREVIEW BUTTON
+   ========================================================= */
+
+.preview-button {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 42px;
+  padding: 0 18px;
+
+  border: 1px solid #cfd4dc;
+  border-radius: 3px;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #344054;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.work-final-cta {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+
+  padding: 120px 0 140px;
+}
+
+.work-final-cta>div {
+  max-width: 850px;
+}
+
+.work-final-cta h2 {
+  max-width: 800px;
+  margin: 18px 0 25px;
+
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: #101828;
+}
+
+.work-final-cta p:not(.section-label) {
+  max-width: 620px;
+  margin: 0 0 35px;
+
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #667085;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.work-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 48px;
+  padding: 0 24px;
+
+  border: 1px solid #155eef;
+  border-radius: 3px;
+
+  background: #155eef;
+  color: #ffffff;
+
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    gap 0.2s ease,
+    transform 0.2s ease;
+}
+
+.work-cta-button:hover {
+  background: #0f4fd6;
+  border-color: #0f4fd6;
+  gap: 17px;
+  transform: translateY(-2px);
+}
+
+.work-cta-button span {
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
 
   .work-hero {
-    padding: 75px 0 80px;
+    padding: 90px 0;
   }
 
-  .work-hero .work-container {
-    grid-template-columns: 35px 1fr;
-    gap: 10px;
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .project-info {
+    max-width: 750px;
+  }
+
+  .project-preview {
+    width: 100%;
+    max-width: 750px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+  .work-hero {
+    width: calc(100% - 32px);
+    padding: 75px 0 65px;
   }
 
   .work-hero-content h1 {
-    font-size: 45px;
+    font-size: clamp(2.7rem, 12vw, 4rem);
+    line-height: 1;
   }
 
-  .work-hero-content > p:last-child {
-    font-size: 15px;
+  .work-hero-content>p:last-child {
+    font-size: 0.94rem;
+    line-height: 1.7;
   }
+
+
+  /* Projects */
 
   .work-projects {
-    padding: 80px 0 90px;
-  }
-
-  .work-projects-intro {
-    grid-template-columns: 1fr;
-    gap: 25px;
-
-    margin-bottom: 45px;
+    width: calc(100% - 32px);
   }
 
   .work-project {
-    padding: 50px 0;
+    padding: 65px 0;
   }
 
-  .work-project-info h3 {
-    font-size: 32px;
+  .project-number {
+    margin-bottom: 30px;
   }
 
-  .work-approach {
-    padding: 80px 0;
+  .project-content {
+    gap: 42px;
   }
 
-  .work-approach-grid {
-    gap: 40px;
+  .project-info h2 {
+    font-size: 2.4rem;
   }
+
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+
+  /* Project details */
+
+  .project-details {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+
+  /* Preview */
+
+  .project-preview {
+    min-height: 320px;
+    padding: 22px;
+  }
+
+  .preview-body h3 {
+    font-size: 2.35rem;
+  }
+
+
+  /* Final CTA */
+
+  .work-final-cta {
+    width: calc(100% - 32px);
+    padding: 80px 0 95px;
+  }
+
+  .work-final-cta h2 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .work-final-cta p:not(.section-label) {
+    font-size: 0.92rem;
+  }
+
+  .work-cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+
 }
 
 
-@media (max-width: 480px) {
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
 
   .work-hero-content h1 {
-    font-size: 39px;
+    font-size: 2.5rem;
   }
 
-  .work-project-info h3 {
-    font-size: 29px;
+  .project-info h2 {
+    font-size: 2.15rem;
   }
 
-  .work-approach-grid h2 {
-    font-size: 36px;
+  .project-preview {
+    min-height: 290px;
   }
+
+  .preview-body h3 {
+    font-size: 2rem;
+  }
+
 }

@@ -1,6 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
-
 import SEO from "../components/SEO";
 import "../styles/home.css";
 
@@ -9,359 +6,419 @@ function Home() {
     <>
       <SEO
         title="Baranwal Web & Tech | Websites & Digital Solutions"
-        description="Baranwal Web & Tech builds professional websites, e-commerce stores, custom business systems and digital solutions for growing businesses."
+        description="Professional websites, e-commerce and custom digital solutions for growing businesses."
       />
 
-      <div className="home">
-        {/* HERO */}
-        <section className="hero">
-          <div className="hero-container">
-            <div className="hero-content">
-              <p className="eyebrow">BARANWAL WEB & TECH</p>
+      <div className="home-page">
+        {/* =========================
+            HERO SECTION
+        ========================== */}
+        <section className="home-hero">
+          <div className="hero-content">
+            <p className="hero-label">BARANWAL WEB & TECH</p>
 
-              <h1>
-                Websites and digital solutions for businesses that want to grow.
-              </h1>
+            <h1>
+              Websites and digital solutions for businesses that want to grow.
+            </h1>
 
-              <p className="hero-description">
-                Professional websites, e-commerce and custom digital solutions
-                designed around the way your business works.
-              </p>
+            <p className="hero-description">
+              Professional websites, e-commerce and custom digital solutions
+              designed around the way your business works.
+            </p>
 
-              <div className="hero-actions">
-                <Link to="/work" className="primary-button">
-                  View Our Work
-                  <ArrowUpRight size={17} />
-                </Link>
+            <div className="hero-actions">
+              <a href="/work" className="btn btn-primary">
+                View Our Work
+              </a>
 
-                <Link to="/contact" className="text-button">
-                  Start a Project
-                  <ArrowUpRight size={16} />
-                </Link>
-              </div>
+              <a href="/contact" className="btn btn-secondary">
+                Start a Project
+              </a>
             </div>
+          </div>
 
-            <div className="hero-project">
-              <div className="project-label">
+          {/* HERO PROJECT */}
+          <div className="hero-visual">
+            <div className="hero-project-preview">
+              <div className="preview-top">
+                <span>SELECTED PROJECT</span>
+
                 <span>01</span>
-                <span>Selected Build</span>
               </div>
 
-              <div className="project-image">
-                <div className="image-placeholder">
-                  <span>Clinic Management System</span>
-                </div>
-              </div>
+              <div className="preview-content">
+                <p>Business Website</p>
 
-              <div className="project-caption">
-                <strong>Clinic Management System</strong>
-                <span>Business System</span>
+                <h2>Ajay Gym</h2>
+
+                <a
+                  href="https://bandwarshlok.github.io/Ajay-Gym/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-project-link"
+                >
+                  View Project ↗
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* INDUSTRIES */}
-        <section className="industry-strip">
-          <div className="section-container">
-            <span className="industry-label">WE WORK WITH</span>
+        {/* =========================
+            INDUSTRIES
+        ========================== */}
+        <section className="industry-section">
+          <p className="section-label">INDUSTRIES</p>
 
-            <div className="industry-list">
-              <span>Retail</span>
-              <span>Healthcare</span>
-              <span>Hospitality</span>
-              <span>Professional Services</span>
-              <span>Local Businesses</span>
-            </div>
+          <div className="industry-list">
+            <span>Retail</span>
+
+            <span>Healthcare</span>
+
+            <span>Hospitality</span>
+
+            <span>Professional Services</span>
+
+            <span>Local Businesses</span>
           </div>
         </section>
 
-        {/* SERVICES */}
-        <section className="services-section">
-          <div className="section-container">
-            <div className="section-intro">
-              <span className="section-number">01</span>
+        {/* =========================
+            SERVICES
+        ========================== */}
+        <section className="services-preview">
+          <div className="section-heading">
+            <span className="section-number">01</span>
 
-              <div>
-                <p className="section-kicker">WHAT WE DO</p>
+            <div>
+              <p className="section-label">WHAT WE DO</p>
 
-                <h2>Digital work built around your business.</h2>
-              </div>
-            </div>
-
-            <div className="services-list">
-              <Link to="/services" className="service-row">
-                <span className="service-number">01</span>
-
-                <div className="service-name">
-                  <h3>Business Websites</h3>
-                  <p>
-                    Professional websites that clearly explain your business and
-                    help customers contact you.
-                  </p>
-                </div>
-
-                <ArrowUpRight size={20} />
-              </Link>
-
-              <Link to="/services" className="service-row">
-                <span className="service-number">02</span>
-
-                <div className="service-name">
-                  <h3>E-Commerce</h3>
-                  <p>
-                    Online stores built around your products, customers and
-                    sales process.
-                  </p>
-                </div>
-
-                <ArrowUpRight size={20} />
-              </Link>
-
-              <Link to="/services" className="service-row">
-                <span className="service-number">03</span>
-
-                <div className="service-name">
-                  <h3>Custom Business Systems</h3>
-                  <p>
-                    Software designed around the way your business actually
-                    operates.
-                  </p>
-                </div>
-
-                <ArrowUpRight size={20} />
-              </Link>
-
-              <Link to="/services" className="service-row">
-                <span className="service-number">04</span>
-
-                <div className="service-name">
-                  <h3>Automation</h3>
-                  <p>
-                    Reduce repetitive work with practical workflows and
-                    integrations.
-                  </p>
-                </div>
-
-                <ArrowUpRight size={20} />
-              </Link>
-
-              <Link to="/services" className="service-row">
-                <span className="service-number">05</span>
-
-                <div className="service-name">
-                  <h3>AI Solutions</h3>
-                  <p>
-                    Practical AI tools for specific business problems and
-                    workflows.
-                  </p>
-                </div>
-
-                <ArrowUpRight size={20} />
-              </Link>
+              <h2>Digital solutions built around your business.</h2>
             </div>
           </div>
-        </section>
 
-        {/* WORK */}
-        <section className="work-section">
-          <div className="section-container">
-            <div className="work-heading">
-              <div>
-                <p className="section-kicker">SELECTED WORK</p>
+          <div className="services-list">
+            {/* SERVICE 01 */}
+            <article className="service-item">
+              <span className="service-number">01</span>
 
-                <h2>Projects we have worked on.</h2>
-              </div>
-
-              <Link to="/work" className="outline-link">
-                View all work
-                <ArrowUpRight size={16} />
-              </Link>
-            </div>
-
-            <div className="work-grid">
-              <article className="work-item work-large">
-                <div className="work-image">
-                  <div className="image-placeholder">
-                    <span>Clinic Management System</span>
-                  </div>
-                </div>
-
-                <div className="work-info">
-                  <div>
-                    <h3>Clinic Management System</h3>
-                    <p>Business System</p>
-                  </div>
-
-                  <span>01</span>
-                </div>
-              </article>
-
-              <article className="work-item">
-                <div className="work-image">
-                  <div className="image-placeholder">
-                    <span>Inventory Control System</span>
-                  </div>
-                </div>
-
-                <div className="work-info">
-                  <div>
-                    <h3>Inventory Control System</h3>
-                    <p>Custom System</p>
-                  </div>
-
-                  <span>02</span>
-                </div>
-              </article>
-
-              <article className="work-item work-offset">
-                <div className="work-image">
-                  <div className="image-placeholder">
-                    <span>Student Result Management System</span>
-                  </div>
-                </div>
-
-                <div className="work-info">
-                  <div>
-                    <h3>Student Result Management System</h3>
-                    <p>Management System</p>
-                  </div>
-
-                  <span>03</span>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        {/* PROCESS */}
-        <section className="process-section">
-          <div className="section-container">
-            <div className="process-layout">
-              <div className="process-intro">
-                <p className="section-kicker">HOW WE WORK</p>
-
-                <h2>Simple process. Clear communication.</h2>
+              <div className="service-info">
+                <h3>Business Websites</h3>
 
                 <p>
-                  Every project starts by understanding what the business needs
-                  before we decide what should be built.
+                  Professional websites that help your business establish a
+                  strong online presence.
                 </p>
-
-                <Link to="/process" className="text-button">
-                  See our process
-                  <ArrowUpRight size={16} />
-                </Link>
               </div>
+            </article>
 
-              <div className="process-steps">
-                <div className="process-step">
-                  <span>01</span>
+            {/* SERVICE 02 */}
+            <article className="service-item">
+              <span className="service-number">02</span>
 
-                  <div>
-                    <h3>Understand</h3>
-                    <p>We learn about your business, customers and problem.</p>
-                  </div>
-                </div>
-
-                <div className="process-step">
-                  <span>02</span>
-
-                  <div>
-                    <h3>Plan</h3>
-                    <p>We define the pages, features, technology and scope.</p>
-                  </div>
-                </div>
-
-                <div className="process-step">
-                  <span>03</span>
-
-                  <div>
-                    <h3>Build</h3>
-                    <p>
-                      We design and develop the solution with regular updates.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="process-step">
-                  <span>04</span>
-
-                  <div>
-                    <h3>Launch</h3>
-                    <p>We test, deploy and hand over the finished project.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* PRICING */}
-        <section className="pricing-section">
-          <div className="section-container">
-            <div className="pricing-layout">
-              <div>
-                <p className="section-kicker">STARTING POINT</p>
-
-                <h2>Clear starting prices.</h2>
+              <div className="service-info">
+                <h3>E-Commerce</h3>
 
                 <p>
-                  Final pricing depends on the project scope, features and
-                  integrations.
+                  Online stores built around your products, customers and
+                  business requirements.
                 </p>
               </div>
+            </article>
 
-              <div className="pricing-list">
-                <div className="price-row">
-                  <div>
-                    <h3>Business Website</h3>
-                    <span>Professional business website</span>
-                  </div>
+            {/* SERVICE 03 */}
+            <article className="service-item">
+              <span className="service-number">03</span>
 
-                  <strong>₹5,000+</strong>
-                </div>
+              <div className="service-info">
+                <h3>Custom Business Systems</h3>
 
-                <div className="price-row">
-                  <div>
-                    <h3>E-Commerce</h3>
-                    <span>Online store and sales features</span>
-                  </div>
-
-                  <strong>₹20,000+</strong>
-                </div>
-
-                <div className="price-row">
-                  <div>
-                    <h3>Custom Solutions</h3>
-                    <span>Business systems and custom software</span>
-                  </div>
-
-                  <strong>Let's discuss</strong>
-                </div>
+                <p>
+                  Software designed around the way your business actually works.
+                </p>
               </div>
-            </div>
+            </article>
+
+            {/* SERVICE 04 */}
+            <article className="service-item">
+              <span className="service-number">04</span>
+
+              <div className="service-info">
+                <h3>Automation</h3>
+
+                <p>
+                  Reduce repetitive work with practical business automation and
+                  workflows.
+                </p>
+              </div>
+            </article>
+
+            {/* SERVICE 05 */}
+            <article className="service-item">
+              <span className="service-number">05</span>
+
+              <div className="service-info">
+                <h3>AI Solutions</h3>
+
+                <p>
+                  Practical AI solutions built for specific business needs and
+                  workflows.
+                </p>
+              </div>
+            </article>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="final-cta">
-          <div className="section-container">
-            <div className="cta-content">
-              <p className="section-kicker">HAVE A PROJECT?</p>
+        {/* =========================
+            SELECTED WORK
+        ========================== */}
+        <section className="selected-work">
+          <div className="section-heading">
+            <span className="section-number">02</span>
 
-              <h2>Have a business problem we can solve?</h2>
+            <div>
+              <p className="section-label">SELECTED WORK</p>
 
-              <p>
-                Tell us what you're trying to improve. We'll help you figure out
-                the right digital solution.
-              </p>
-
-              <Link to="/contact" className="primary-button">
-                Start a Conversation
-                <ArrowUpRight size={17} />
-              </Link>
+              <h2>Projects we've built.</h2>
             </div>
+          </div>
+
+          <div className="work-list">
+            {/* PROJECT 01 - AJAY GYM */}
+            <article className="work-item">
+              <div className="work-content">
+                <span className="work-number">01</span>
+
+                <div className="work-details">
+                  <p className="work-category">Business Website</p>
+
+                  <h3>Ajay Gym</h3>
+
+                  <p className="work-description">
+                    A complete website for a fitness business with information
+                    about services, facilities, pricing, gallery and contact.
+                  </p>
+
+                  <a
+                    href="https://bandwarshlok.github.io/Ajay-Gym/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="work-link"
+                  >
+                    View Live Project
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            {/* PROJECT 02 - TASKFLOW */}
+            <article className="work-item">
+              <div className="work-content">
+                <span className="work-number">02</span>
+
+                <div className="work-details">
+                  <p className="work-category">Task Management Application</p>
+
+                  <h3>TaskFlow</h3>
+
+                  <p className="work-description">
+                    A task management application with user authentication and
+                    personal task management.
+                  </p>
+
+                  <a
+                    href="https://bandwarshlok.github.io/Task-Flow/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="work-link"
+                  >
+                    View Live Project
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            {/* PROJECT 03 - INVENTORY */}
+            <article className="work-item">
+              <div className="work-content">
+                <span className="work-number">03</span>
+
+                <div className="work-details">
+                  <p className="work-category">Custom Business System</p>
+
+                  <h3>Inventory Control System</h3>
+
+                  <p className="work-description">
+                    A digital system for managing products, categories,
+                    suppliers and inventory operations.
+                  </p>
+
+                  <a
+                    href="https://bandwarshlok.github.io/Inventory-Control-System/frontend/dashboard.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="work-link"
+                  >
+                    View Live Project
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          {/* WORK CTA */}
+          <div className="work-cta">
+            <p>Want to see what we can build for your business?</p>
+
+            <a href="/work" className="work-cta-link">
+              View All Work
+              <span>→</span>
+            </a>
+          </div>
+        </section>
+
+        {/* =========================
+            PROCESS
+        ========================== */}
+        <section className="process-preview">
+          <div className="section-heading">
+            <span className="section-number">03</span>
+
+            <div>
+              <p className="section-label">OUR PROCESS</p>
+
+              <h2>From idea to launch.</h2>
+            </div>
+          </div>
+
+          <div className="process-list">
+            {/* STEP 01 */}
+            <article className="process-item">
+              <span>01</span>
+
+              <div>
+                <h3>Understand</h3>
+
+                <p>
+                  We understand your business, goals and the problem you want to
+                  solve.
+                </p>
+              </div>
+            </article>
+
+            {/* STEP 02 */}
+            <article className="process-item">
+              <span>02</span>
+
+              <div>
+                <h3>Plan</h3>
+
+                <p>
+                  We define the structure, features and technology required for
+                  the project.
+                </p>
+              </div>
+            </article>
+
+            {/* STEP 03 */}
+            <article className="process-item">
+              <span>03</span>
+
+              <div>
+                <h3>Build</h3>
+
+                <p>
+                  We design and develop the solution with regular progress and
+                  testing.
+                </p>
+              </div>
+            </article>
+
+            {/* STEP 04 */}
+            <article className="process-item">
+              <span>04</span>
+
+              <div>
+                <h3>Launch</h3>
+
+                <p>
+                  After testing, we deploy the project and help you get started.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        {/* =========================
+            PRICING
+        ========================== */}
+        <section className="pricing-preview">
+          <div className="section-heading">
+            <span className="section-number">04</span>
+
+            <div>
+              <p className="section-label">STARTING PRICES</p>
+
+              <h2>Solutions for different stages of growth.</h2>
+            </div>
+          </div>
+
+          <div className="pricing-list">
+            {/* BUSINESS WEBSITE */}
+            <article className="pricing-item">
+              <div>
+                <p>Business Website</p>
+
+                <h3>₹5,000+</h3>
+              </div>
+
+              <span>Professional business presence</span>
+            </article>
+
+            {/* E-COMMERCE */}
+            <article className="pricing-item">
+              <div>
+                <p>E-Commerce</p>
+
+                <h3>₹20,000+</h3>
+              </div>
+
+              <span>Online store and product management</span>
+            </article>
+
+            {/* CUSTOM */}
+            <article className="pricing-item">
+              <div>
+                <p>Custom Solutions</p>
+
+                <h3>Let's discuss</h3>
+              </div>
+
+              <span>Systems designed around your workflow</span>
+            </article>
+          </div>
+        </section>
+
+        {/* =========================
+            FINAL CTA
+        ========================== */}
+        <section className="home-final-cta">
+          <div className="cta-content">
+            <p className="section-label">START A PROJECT</p>
+
+            <h2>Have a business problem we can solve?</h2>
+
+            <p>
+              Tell us what you're trying to improve. We'll help you figure out
+              the right digital solution.
+            </p>
+
+            <a href="/contact" className="btn btn-primary">
+              Start a Conversation
+            </a>
           </div>
         </section>
       </div>
